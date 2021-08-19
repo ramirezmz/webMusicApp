@@ -10,3 +10,6 @@
     - [ ]  Um botão para acessar a musica completa no Deezer.
     - [ ]  Um botão de play/pause para escutar a prévia da música.
     - [ ]  Um botão para adicionar a música na lista de músicas favoritas.
+
+2º View:
+  - [ ]  Será apresentada a lista com as músicas escolhidas pelo usuário na tela principal. A listagem deve ser semelhante a da tela inicial, porém deve mostrar o botão para remover da lista de favoritos.
