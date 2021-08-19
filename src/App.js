@@ -1,10 +1,17 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Player from "./pages/Player/Player"
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
-  );
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Player} />
+        {/* <Route path="/services" component={Services} /> */}
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;
