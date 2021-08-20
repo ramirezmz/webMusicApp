@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { PlayCircle } from "@styled-icons/ionicons-outline/PlayCircle"
 
-export const ContentControls = styled.div`
-  width:70%;
-  margin: 10px auto 25px auto;
+
+export const Controlers = styled.div`
+  width:30%;
+  margin: 15px auto 25px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,8 +16,5 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
   outline: none;
-`;
-
-export const PlayButton = styled(PlayCircle) `
   color: #eee;
 `;

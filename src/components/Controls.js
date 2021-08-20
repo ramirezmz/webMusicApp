@@ -1,17 +1,26 @@
 import React from "react";
-// import { AiFillPlayCircle, AiFillPauseCircle, AiFillBackward, AiFillForward } from "react-icons/ai";
+import { AiFillPlayCircle, AiFillPauseCircle, AiFillBackward, AiFillForward } from "react-icons/ai";
 import {
-  ContentControls,
+  Controlers,
   Button,
-  PlayButton} from "./Controls.element";
+  } from "./Controls.element";
 
-const Controls = () => {
+
+  
+const Controls = ({isPlaying, setIsPlaying, skipSong}) => {
 
   return(
-    <ContentControls>
-      <Button>
+    <Controlers>
+      <Button onClick={() => skipSong(false)}>
+        <AiFillBackward />
       </Button>
-    </ContentControls>
+      <Button className="btn play-btn" onClick={() => setIsPlaying(!isPlaying)}>
+        {isPlaying ? <AiFillPauseCircle /> : <AiFillPlayCircle />}
+      </Button>
+      <Button className="btn skip-btn" onClick={() => skipSong(true)}>
+        <AiFillForward />
+      </Button>
+    </Controlers>
   )
 }
 
